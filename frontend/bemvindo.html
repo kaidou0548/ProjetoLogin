@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem Vindo </title>
+    
+</head>
+<body>
+    <div class="pag" id="divum">
+        <h1 id="bemvindo" value = "" ></h1>
+        <p id="conselho" value = ""></p>
+        <br>
+        <button id="voltaLogin" type="button" onclick="deslogar('divdois')" >sair</button>
+    </div>
+
+    <div class="pag" id="divdois">
+        <h1>Faça seu login</h1>
+
+        <label>Nome</label>
+        <input name="nome" id="nome" type="text" value="" placeholder="Digite seu Nome" required></input>
+        <p id="ErroNome" value=""></p>
+
+        <label>Email</label>
+        <input name="email" id="email" type="email" value="" placeholder="Digite seu Email" required></input>
+        <p id="ErroEmail" value=""></p>
+
+        <label>Senha</label>
+        <input name="senha" id="senha" type="password" value="" placeholder="Digite sua Senha" required></input>
+        <p id="ErroSenha" value=""></p>
+
+        <br>
+
+        <button id="login" type="button" onclick="login()">Login</button>
+    </div>
+    <script src="./felipeiracerto.js"></script>
+</body>
+</html>
